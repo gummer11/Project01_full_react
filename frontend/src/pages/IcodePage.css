@@ -1,0 +1,479 @@
+.h100 {
+  color: aqua;
+  text-align: center;
+  background-color: blue;
+}
+
+/* s1  */
+.s1 {
+  height: 200px;
+  width: 100%;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f8efef;
+}
+#main1 {
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  box-shadow: 0px 10px 14px 5px rgba(239, 220, 220, 0.8);
+}
+.maindiv1 {
+  background-color: white;
+  width: 60%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 40px;
+  text-align: left;
+}
+.maindiv2 {
+  background-image: url("https://img.freepik.com/free-photo/sea-landscape-with-digital-art-style_23-2151158402.jpg?t=st=1726403487~exp=1726407087~hmac=b2a4fa125494f69ffcdc9b19d40a98d2104eb5a85549fce355d370aa2323321a&w=740");
+  width: 40%;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+  display: flex;
+}
+.xbutton {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 30px;
+  width: 30px;
+  background-color: #e0eef0;
+  transition: transform 0.5s linear;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xbutton:hover {
+  transform: rotate(90deg);
+  background-color: #76ddff;
+  color: white;
+}
+.iconx {
+  color: gray;
+}
+#ps1 {
+  margin-top: 10px;
+}
+.input1 {
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px rgb(230, 224, 224);
+  padding-left: 15px;
+}
+.divpassword,
+.social {
+  background-color: white;
+  display: flex;
+  height: 50px;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+#hrs1 {
+  margin-top: 40px;
+}
+.passw1 {
+  width: 70%;
+}
+.passw2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 30%;
+}
+#h5s1 {
+  color: #4b8ea6;
+  transition: transform 0.2s linear;
+}
+#h5s1:hover {
+  transform: scale(1.05);
+  color: #00bbf9;
+}
+.buttonnext {
+  background-color: #046586;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.5s linear;
+}
+.buttonnext:hover {
+  transform: scale(1.05);
+  background-color: white;
+  border: solid 1px #046586;
+  color: #046586;
+}
+#h6s1 {
+  color: rgb(163, 206, 232);
+}
+.divh6 {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.small {
+  font-size: x-small;
+}
+.underline {
+  text-decoration: underline;
+  color: #4b8ea6;
+  transition: transform 0.2s linear;
+  font-weight: 800;
+}
+.underline:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: #00bbf9;
+  font-size: medium;
+}
+.social1 {
+  width: 47%;
+}
+
+.social2 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 47%;
+}
+.social3 {
+  width: 6%;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  position: relative;
+  animation: fadeInRight 2s;
+}
+
+@media (max-width: 640px) {
+  .maindiv2 {
+    width: 0%;
+  }
+  .maindiv1 {
+    width: 100%;
+  }
+}
+/* s1 vége */
+/* s2  */
+.s2 {
+  height: 200px;
+  width: 100%;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #7789e1;
+}
+#main2 {
+  background-color: #ffffff;
+
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.img2 {
+  width: 100%;
+  height: 460px;
+  background-image: url("https://img.freepik.com/free-photo/beautiful-dusk-light-colorful-beauty_1203-5706.jpg?t=st=1724344697~exp=1724348297~hmac=ab000f561cff683a614177fa421dc7bc264e41eabe039def93c4d08d4411dea4&w=900");
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.h4black {
+  background-color: black;
+  color: white;
+  border-radius: 0 10px 0 0;
+  cursor: pointer;
+}
+#h4s2 {
+  padding: 20px;
+}
+#ps2 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#h2s2 {
+  margin-top: 190px;
+  margin-left: 20px;
+}
+.input2 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#inputs2 {
+  height: 40px;
+  width: 240px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 10px;
+}
+
+.buttons2 {
+  height: 40px;
+  width: 110px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  transition: transform 0.5s linear;
+}
+.footer {
+  display: flex;
+}
+#h3s2 {
+  font-weight: 800;
+  font-size: larger;
+}
+#h6s2 {
+  font-weight: 400;
+  font-size: x-small;
+  color: gray;
+  margin-top: 10px;
+}
+.f1 {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.5s linear;
+  background-color: white;
+  border-radius: 10px;
+}
+#h5s2 {
+  font-weight: 400;
+  font-size: x-small;
+  color: black;
+  margin-top: 10px;
+}
+.f1:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 5px 14px 3px gold;
+}
+.buttons2:hover {
+  transform: scale(1.1);
+  background-color: gold;
+  color: grey;
+}
+.h4black:hover {
+  transform: scale(1.1);
+  background-color: black;
+  color: gold;
+}
+/* s2 vége */
+/* s3  */
+.s3 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: #ffffff;
+}
+#main3 {
+  background-color: #f6f7f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  min-height: 60vh;
+}
+.window {
+  background-color: #ffffff;
+
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  border-radius: 10px;
+  padding: 3rem;
+}
+.profile3,
+.input3,
+.buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profile,
+.res_pass,
+.pass,
+.buttons {
+  margin-top: 2rem;
+}
+#inputs3 {
+  margin-top: 0.5rem;
+}
+
+#imgs3 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+#h3s3,
+#p3s3 {
+  color: #132b50;
+}
+.res_pass {
+  text-decoration: underline;
+  font-size: smaller;
+  font-weight: 700;
+}
+.inputtt {
+  border: solid 1px black;
+  border-radius: 3px;
+  display: flex;
+  padding: 5px;
+  width: 400px;
+}
+.stay {
+  font-size: small;
+}
+.button {
+  position: absolute;
+  background-color: #132b50;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  right: 25px;
+}
+.job,
+.pass {
+  font-size: x-small;
+}
+.name {
+  font-weight: 700;
+  margin-top: 5px;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.text1 {
+  width: 160px;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch #inputs3 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #132b50;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#inputs3:checked + .slider {
+  background-color: #132b50;
+}
+
+#inputs3:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+#inputs3:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* s3 vége */
+/* s4  */
+
+/* s4 vége */

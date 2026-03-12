@@ -1,0 +1,70 @@
+.menu-container {
+  position: relative;
+}
+.hmenu {
+  background-color: aqua;
+  height: 100vh;
+  width: 100%;
+}
+
+.hamburger-btn {
+  font-size: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Alapból kint van a képernyőből */
+  width: 250px;
+  height: 100%;
+  background-color: #71c9ce;
+  color: white;
+  transition: 0.3s; /* Ez adja a "csúszós" animációt */
+  z-index: 1000;
+  padding-top: 60px;
+  /* ... a korábbi tulajdonságok maradnak, de add hozzá ezt: */
+  opacity: 10;
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+
+.side-menu.open {
+  left: 0; /* Megjelenik */
+  opacity: 1; /* Itt tűnik elő a menü */
+}
+.side-menu {
+  /* ... a korábbi tulajdonságok maradnak, de add hozzá ezt: */
+  opacity: 0;
+  transition: left 0.3s ease, opacity 0.3s ease;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  /* Animáció beállításai */
+  opacity: 0; /* Alapból láthatatlan */
+  visibility: hidden; /* Kattintható sem lesz */
+  transition: opacity 0.3s ease; /* Az áttűnés ideje */
+}

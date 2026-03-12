@@ -1,0 +1,41 @@
+/* https://icodethis.com/modes/design-to-code/508/submissions */
+
+.h1h1sl {
+  color: aqua;
+  text-align: center;
+  background-color: blue;
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.slider-image {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out; /* Ez adja a lágy váltást */
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-image {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px; /* Egy kis finomítás */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* ITT VAN A VARÁZSLAT: */
+  /* Hozzárendeljük a fadeIn animációt, 0.5 másodperces időtartammal, lágy indítással */
+  animation: fadeIn 1.3s ease-in-out;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>footer</title>
+  <link rel="stylesheet" href="./footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!-- <h1>footer</h1>
+Position
+https://www.youtube.com/watch?v=jx5jmI0UlXU
+Relative: 
+Alapesetben mindebn static, a relativ hasonló a static-hoz de lehet speciális beállításokat végezni, amit a statikushoz nem lehet.
+A relatívnál meg lehet változtatni a pozíziót, ahhoz képest ahol elvileg lenne. pl. left 10 px. De a relativot nem szokás a right,left
+top és botommal együtt használni, mert nehéz lesz a többit hozzáigazítani.
+
+Absolute: kiveszi a normál sorból az elementet és máshoz igazítja, a többi pedig úgy viseledik, mintha ez nem lenne.
+Akkor hasznos, ha egy adott helyre szeretnénk rakni valamit, úgy hogy a többi ne vegye körül azt.(egy külön layert hoz létre)
+Előtte pl. relativot szokás használni,  az első szülőhöz igazodik ahol van position ami nem static 
+( ami lehet relativ,absolute,sticky vagy fixed), de végül a html elementhez igazodik nem talál szülőt poisitionnal.
+
+Fixed: nem veszi figyelembe a position szülőt, nem igazodik hozzá. A html-hez igazodik. Ha lefelé görgetünk, akkor ott marad,
+míg az absolute az oldallal együtt mozog.
+
+Sticky:a relativ és a fixed kombinációja, alapesetben relativ, de amint elhagyná az oldalt, fixed-é válik
+kell hozzá egy top,bottom,right vagy left
+nem minden böngésző támogatja
+https://www.youtube.com/watch?v=NzjU1GmKosQ&t=0s
+
+Div igazítás:
+https://www.youtube.com/watch?v=Rkbmx_22Y8Y&list=PLuYHIg_0xQJtNqm3O97NMFMrmvBekF4G_&index=24
+Középre:
+margin-left: auto;
+margin-right: auto;
+Jobbra: 
+float:right;
+
+--> 
+
+<!-- Pseudo-class
+https://www.youtube.com/watch?v=NzePuOCLyNQ&list=PLuYHIg_0xQJtNqm3O97NMFMrmvBekF4G_&index=25
+pseudo-link
+a: link {}  - még nem látogatott (nem volt rákattintva)
+a: visited {}  - rákattintás után
+a: hover {}  - egér rajta van
+a: active {}  - active link esetén?
+
+
+
+Section,article,div
+https://www.youtube.com/watch?v=swWeWesZVZU
+ha van benne h1,h2.... akkor article vagy section
+ha nincs akkor div
+ha van stand alone (egyedül álló ) content, akkor article
+
+
+nagyon hasznos!!!
+https://www.youtube.com/watch?v=bOUhq46fd5g
+https://www.youtube.com/watch?v=uDkjZ-UjgX0
+
+-->
+<h1 class="h1h1">Footer</h1>
+<!--  -->
+<!-- s1  -->
+<section class="s1">
+  <footer class="footer">
+    <footer class="footer__major-menu">
+        <div class="footer__major-menu__left">
+            <ul>
+                <h4>Gallery</h4>
+                <li><a href="">Community</a></li>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Picks</a></li>
+            </ul>
+            <ul>
+                <h4>Marketplace</h4>
+                <li><a href="">Trending</a></li>
+                <li><a href="">Best selling</a></li>
+                <li><a href="">Latest</a></li>
+            </ul>
+            <ul>
+                <h4>Magazine</h4>
+                <li><a href="">Art Skills</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Inspiration</a></li>
+                <li><a href="">News</a></li>
+            </ul>
+        </div>
+        <div class="main-footer__major-menu__right">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter to get your weekly dose of news,
+                updates, tips and special offers
+            </p>
+            <form action="">
+                <div class="wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter your email address"
+          />
+                </div>
+                <button class="btn btn-block" disabled>Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    <hr class="footer-divider" />
+    <footer class="footer__minor-menu">
+        <div>
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Dribble</a></li>
+                <li><a href="">Behance</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</footer>
+  
+</section>
+ <!-- s1 vége -->
+</body>
+
+</html>

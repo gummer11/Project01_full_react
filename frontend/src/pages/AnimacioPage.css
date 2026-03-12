@@ -1,0 +1,341 @@
+.h1anim {
+  color: aqua;
+  text-align: center;
+  background-color: blue;
+}
+.animdiv {
+  display: flex;
+}
+.animmaine {
+  background-color: rgb(71, 174, 182);
+}
+/* ---button1--- */
+.button1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #002536;
+  width: 300px;
+  min-height: 80px;
+}
+#demo {
+  color: #0ef;
+}
+.b1 {
+  height: 45px;
+  width: 150px;
+  border-radius: 50px;
+  background: #002536;
+  color: #0ef;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+  cursor: pointer;
+}
+.b1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: skew(45deg);
+  background: #002536;
+  z-index: -1;
+  transition: 0.5s;
+}
+.b1:hover::before {
+  transform: skew(90deg);
+}
+.b1:hover {
+  color: #002536;
+  box-shadow: 0 0 5px #0ef, 0 0 15px #0ef, 0 0 30px #0ef, inset 0 0 5px #002536;
+  background: #0ef;
+  border: 2px solid #0ef;
+}
+/* ----button2----- */
+.button2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #111;
+  width: 300px;
+  min-height: 120px;
+}
+.b2:hover {
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: circling 1.5s linear infinite;
+}
+.b2 {
+  margin: 50px 50px;
+  /* background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0); */
+  height: 55px;
+  width: 160px;
+  border-radius: 50px;
+  position: relative;
+  background-color: #111;
+}
+.b2 button,
+.b2 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.b2 button {
+  background: #111;
+  color: #f2f2f2;
+  z-index: 9;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  height: 45px;
+  width: 150px;
+  border-radius: 50px;
+}
+.b2 span {
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  border-radius: 50px;
+}
+.b2:hover span:nth-child(1) {
+  filter: blur(7px);
+}
+.b2:hover span:nth-child(2) {
+  filter: blur(14px);
+}
+@keyframes circling {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+/* ----button3----- */
+
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
+.button3 {
+  display: grid;
+  place-items: center;
+  font-family: "Balsamiq Sans", cursive;
+  width: 300px;
+  min-height: 250px;
+  background: var(--clr-bg);
+}
+
+.neon-button {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+  position: relative;
+  z-index: 1;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+/* ----button4----- */
+.button4 {
+  background: #0c002b;
+  width: 300px;
+  min-height: 220px;
+  position: relative;
+}
+.b4 .snake {
+  color: #1670f0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px 12px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.b4 a:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+.b4 a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #0c002b, #1779ff);
+  animation: animate1 1.8s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.b4 a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #0c002b, #1779ff);
+  animation: animate2 1.8s linear infinite;
+  animation-delay: 0.9s;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.b4 a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #0c002b, #1779ff);
+  animation: animate3 1.8s linear infinite;
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.b4 a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #0c002b, #1779ff);
+  animation: animate4 1.8s linear infinite;
+  animation-delay: 0.9s;
+}
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .animdiv {
+    flex-direction: column;
+  }
+}
+/* button 5 */
+.button5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  width: 300px;
+  min-height: 120px;
+}
+.ab5 {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+.ab5:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.ab5:hover {
+  color: #ffffff;
+}
+.ab5:hover:after {
+  width: 100%;
+}

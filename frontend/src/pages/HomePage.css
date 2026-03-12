@@ -1,0 +1,226 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS 
+multi_pages website https://www.youtube.com/watch?v=iXSSHlOe47s
+https://colorhunt.co/
+https://appbrewery.github.io/css-positioning/
+https://appbrewery.github.io/css-display/
+https://appbrewery.github.io/flex-layout/
+https://github.com/twbs/bootstrap/tree/main/scss
+https://getbootstrap.com/
+https://getbootstrap.com/docs/4.0/layout/grid/
+
+display=block,inline,inline-block,none
+float=left,right---clear
+
+display=flex
+display=grid
+
+1D FLEXBOX,2D GRID, DE KEVERNI IS LEHET HA CÉLSZERŰ
+FONTOS*/
+
+/*
+flex-direction= row, column  (a tartalom iránya)
+flex-basis:  ( a tartalom szélessége)
+order:  (sorrend számokkal)
+flax-wrap:nowrap, wrap  (ha már több soros)
+justify-content:
+align_items:
+align-content: (csak wrap esetén)
+align-self:
+
+(1 divre vonatkoznak a konténerben:)
+flex-grow: 1;  (egy divet kiválasztva növeljük a méretét)
+flex-shrink:  ;
+flex-basis:  ;
+flex:  ;
+
+height:70 vh;  (a containert 70 viewport height-ra emeltük)
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.youtube.com/watch?v=phWxA89Dy94
+
+*/
+
+.homepageh1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #14ffec;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+
+.homepageh2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #03857a;
+  text-align: center;
+}
+* {
+  margin: 0;
+}
+.section-0 {
+  width: 100%;
+  height: 25vh;
+  background-color: #71c9ce;
+}
+
+.section-1 {
+  width: 100%;
+  height: 145vh;
+  background-color: #a6e3e9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-2 {
+  width: 100%;
+  height: 0vh;
+  background-color: #cbf1f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-3 {
+  width: 100%;
+  height: 0vh;
+  background-color: #e3fdfd;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imghp {
+  width: 14vw;
+  height: 14vw;
+  object-fit: cover;
+  border-radius: 10px;
+  border: solid 5px #14ffec;
+}
+
+/*,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }*/
+
+/* body {
+    margin: 0;
+  } */
+@media (max-width: 640px) {
+  .homepageh1 {
+    font-size: xx-large;
+  }
+  .section-0 {
+    height: 15vh;
+  }
+  .section-1 {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .section-1 {
+    height: 95vh;
+  }
+}
+
+/*:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #3d0ead;
+    --background: rgb(206, 39, 39);
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }*/
+
+/* .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu:has(input:checked) {
+    --foreground: rgb(33, 228, 202);
+    --background: #333;
+  }
+  
+  .hamburger-menu:has(input:focus-visible)::before,
+  .hamburger-menu:has(input:focus-visible)::after,
+  .hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .sidebar {
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: var(--foreground);
+    color: var(--background);
+    max-width: 10rem;
+    min-height: 10vh;  /* fontos 100 volt */
+/*  }
+  
+  .hamburger-menu:has(input:checked) + .sidebar {
+    translate: 0;
+  }*/

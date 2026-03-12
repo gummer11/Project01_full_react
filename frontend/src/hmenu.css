@@ -1,0 +1,275 @@
+/* https://icodethis.com/modes/design-to-code/519/submissions 
+https://icodethis.com/modes/design-to-code/528/submissions */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }  /*ok*/
+  .h1h1{
+    color: aqua;
+    text-align: center;
+    background-color: blue;
+}
+.s1 {
+    background-color: #d3ea9d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 65vh;
+}
+
+/* sample */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+    background: darkslateblue;
+    border-bottom: 8px solid slategray;
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+header button:hover {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
+}
+
+button {
+    transition: all .4s ease;
+}
+
+article {
+    text-shadow: 1px 1px 1px #1b1a1b;
+}
+
+.main-button {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+.logo {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right top, rgb(194, 145, 192), pink, lightskyblue, peachpuff, lightblue);
+    background-size: 50% auto;
+    /*-webkit-background-clip: text;*/
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-bar {
+    background: #1b1a1b;
+    backdrop-filter: blur(15px);
+    width: 250px;
+    height: 65vh;
+    position: relative;   /* fixed volt */
+    top: 0;
+    left: -250px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+    z-index: 1;
+}
+
+.socials span {
+    text-shadow: 1px 1px 1px #fff;
+    transition: all .4s ease;
+}
+
+.socials span:hover {
+    transform: scale(1.1)
+}
+.side-bar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 16px;
+    line-height: 40px;
+}
+
+.side-bar .menu .item a:hover {
+    background: #33363a;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i {
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+    background: #262627;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.side-bar .menu .item.active .sub-menu {
+    max-height: 400px;
+    opacity: 1;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.close-btn {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.menu-btn {
+    position: absolute;
+    font-size: 35px;
+    margin: 10px 25px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul.threads {
+    list-style: none;
+    padding: 0;
+}
+
+ul.threads li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.button:hover {
+    background-color: #218838;
+}
+
+input, textarea {
+    color: teal;
+}
+
+.post,
+.reply {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form.reply-form,
+form.new-thread-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form.reply-form textarea,
+form.new-thread-form input,
+form.new-thread-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form.reply-form button,
+form.new-thread-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form.reply-form button:hover,
+form.new-thread-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
