@@ -37,7 +37,7 @@ const HomePage = () => {
             </h2>
             <Link to="/ip">
               <img
-                src="../public/images/it11.jpg" //"./assets/images/it11.jpg"
+                src="../images/it11.jpg" //"./assets/images/it11.jpg"
                 alt="blue"
                 className="imghp"
               />
@@ -48,11 +48,7 @@ const HomePage = () => {
               Js
             </h2>
             <Link to="/jp">
-              <img
-                src="../public/images/it222.jpg"
-                alt="orange"
-                className="imghp"
-              />
+              <img src="../images/it222.jpg" alt="orange" className="imghp" />
             </Link>
           </div>
           <div>
@@ -60,11 +56,7 @@ const HomePage = () => {
               React
             </h2>
             <Link to="/bb">
-              <img
-                src="../public/images/reactok.png"
-                alt="yellow"
-                className="imghp"
-              />
+              <img src="../images/reactok.png" alt="yellow" className="imghp" />
             </Link>
           </div>
           <div>
@@ -72,11 +64,7 @@ const HomePage = () => {
               Api
             </h2>
             <Link to="/ap">
-              <img
-                src="../public/images/api.jpg"
-                alt="yellow"
-                className="imghp"
-              />
+              <img src="../images/api.jpg" alt="yellow" className="imghp" />
             </Link>
           </div>
           <div>
@@ -84,11 +72,7 @@ const HomePage = () => {
               Animáció
             </h2>
             <Link to="/animp">
-              <img
-                src="../public/images/it33.jpg"
-                alt="green"
-                className="imghp"
-              />
+              <img src="../images/it33.jpg" alt="green" className="imghp" />
             </Link>
           </div>
           <div>
@@ -96,11 +80,7 @@ const HomePage = () => {
               Footer
             </h2>
             <Link to="/fp">
-              <img
-                src="../public/images/it4.jpg"
-                alt="yellow"
-                className="imghp"
-              />
+              <img src="../images/it4.jpg" alt="yellow" className="imghp" />
             </Link>
           </div>
           <div>
@@ -109,7 +89,7 @@ const HomePage = () => {
             </h2>
             <Link to="/hp">
               <img
-                src="../public/images/hamburger_11102184.png"
+                src="../images/hamburger_11102184.png"
                 alt="yellow"
                 className="imghp"
               />
@@ -120,11 +100,7 @@ const HomePage = () => {
               Dropdown menu
             </h2>
             <Link to="/dp">
-              <img
-                src="../public/images/ddown.png"
-                alt="yellow"
-                className="imghp"
-              />
+              <img src="../images/ddown.png" alt="yellow" className="imghp" />
             </Link>
           </div>
           <div>
@@ -132,11 +108,7 @@ const HomePage = () => {
               Slider
             </h2>
             <Link to="/sp">
-              <img
-                src="../public/images/slider.png"
-                alt="yellow"
-                className="imghp"
-              />
+              <img src="../images/slider.png" alt="yellow" className="imghp" />
             </Link>
           </div>
         </div>
