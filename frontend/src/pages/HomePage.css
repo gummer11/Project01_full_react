@@ -115,6 +115,9 @@ https://www.youtube.com/watch?v=phWxA89Dy94
   .homepageh1 {
     font-size: xx-large;
   }
+  .homepageh2 {
+    font-size: small;
+  }
   .section-0 {
     height: 15vh;
   }
@@ -131,6 +134,13 @@ https://www.youtube.com/watch?v=phWxA89Dy94
 
   .section-1 {
     height: 95vh;
+  }
+  .imghp {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 4px;
+    border: solid 3px #14ffec;
   }
 }
 
