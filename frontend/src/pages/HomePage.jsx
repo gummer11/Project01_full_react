@@ -8,7 +8,7 @@ import NotesNotFound from "../components/NotesNotFound";
 import { Link, useNavigate } from "react-router";
 import "./HomePage.css";
 //import axios from "axios";    comment <Link to="/fff"></Link>
-
+//render node.js https://www.youtube.com/watch?v=tNpoc86cHrQ
 const HomePage = () => {
   const navigate = useNavigate();
   return (
