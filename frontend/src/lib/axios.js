@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // in production, there's no localhost so we have to make this dynamic
-const BASE_URL = "https://project01-full-react.onrender.com";
+const BASE_URL = "https://project01-full-react.onrender.com/api";
 // import.meta.env.MODE === "development"
 // ? "http://localhost:5001/api"
 // : "https://project01-full-react.onrender.com";

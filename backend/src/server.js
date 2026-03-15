@@ -18,7 +18,7 @@ app.use(
     //origin: "http://localhost:5173",  dev
 
     //az alábbi a vercel production
-    origin: "https://viliweb.hu/bb", // A Vercel-es URL-ed
+    origin: "https://viliweb.hu", // A Vercel-es URL-ed
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
