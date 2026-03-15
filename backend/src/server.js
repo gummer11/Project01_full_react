@@ -18,7 +18,7 @@ app.use(
     //origin: "http://localhost:5173",  dev
 
     //az alábbi a vercel production
-    origin: "project01-full-react-git-viliteszt-gummer11s-projects.vercel.app", // A Vercel-es URL-ed
+    origin: "viliweb.hu", // A Vercel-es URL-ed
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
