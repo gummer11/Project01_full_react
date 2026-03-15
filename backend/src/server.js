@@ -1,9 +1,9 @@
 import express from "express";
-import notesRoutes from "./routes/notesRoutes.js";
-import dotenv from "dotenv";
-import { connectDB } from "./config/db.js";
-const express = require("express");
 import cors from "cors";
+import dotenv from "dotenv";
+import notesRoutes from "./routes/notesRoutes.js";
+
+import { connectDB } from "./config/db.js";
 
 dotenv.config();
 
@@ -18,7 +18,7 @@ app.use(
     //origin: "http://localhost:5173",  dev
 
     //az alábbi a vercel production
-    origin: "https://viliweb.hu", // A Vercel-es URL-ed
+    origin: "https://www.viliweb.hu", // A Vercel-es URL-ed
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
