@@ -37,7 +37,9 @@ const SliderPage = () => {
     <div>
       <h1 className="h1h1sl">Slider</h1>
       <div className="slider-container">
-        <button onClick={prevSlide}>Előző</button>
+        <button onClick={prevSlide} className="prev-btn">
+          Előző
+        </button>
 
         <img
           src={images[index]}
@@ -46,7 +48,9 @@ const SliderPage = () => {
           key={index}
         />
 
-        <button onClick={nextSlide}>Következő</button>
+        <button onClick={nextSlide} className="next-btn">
+          Következő
+        </button>
       </div>
     </div>
   );

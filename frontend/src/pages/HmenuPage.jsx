@@ -8,7 +8,7 @@ const HmenuPage = () => {
   return (
     <div className="hmenu">
       <div className="menu-container">
-        <h1 className="h1navpage ">Hamburger menu </h1>
+        <h1 className="h1navpage ">Hamburger menu</h1>
 
         {/* Hamburger gomb */}
         <button className="hamburger-btn" onClick={() => setIsOpen(!isOpen)}>

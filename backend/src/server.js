@@ -15,7 +15,7 @@ connectDB();
 //middleware
 app.use(
   cors({
-    //origin: "http://localhost:5173",  dev
+    // origin: "http://localhost:5173", //dev
 
     //az alábbi a vercel production
     origin: "https://viliweb.hu", // A Vercel-es URL-ed
