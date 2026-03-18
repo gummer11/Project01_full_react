@@ -9,7 +9,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 }
 .section0 {
   height: 5vh;
-  width: 100%;
 }
 
 /* Common styles font-size: 62.5%; */
@@ -38,7 +37,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 /* Navbar 1 */
 .navbar {
-  width: 100%;
   height: 14rem;
   background-color: #000;
   position: fixed;
@@ -59,7 +57,7 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 .navbar-link {
   color: #aaa;
-  margin: 0 4rem;
+  margin: 0 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +96,7 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 }
 
 .navbar-link i {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 .navbar-link span {
@@ -143,8 +141,8 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 /* navbar 2 */
 .section-2 {
-  width: 130%;
-  height: 100vh;
+  height: 80vh;
+  width: 100vw;
   background-color: #fff;
   position: relative;
   overflow: hidden;
@@ -218,7 +216,7 @@ https://icodethis.com/modes/design-to-code/477/submissions */
   text-shadow: 0.3rem 0.3rem 0.3rem #888;
   color: #fff;
   background-color: #fff;
-  width: 85rem;
+
   text-align: center;
   padding: 0.8rem 1.6rem;
   border-radius: 0.8rem;
@@ -241,7 +239,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 /* navbar3 */
 .navbar3 {
-  width: 100%;
   height: 8rem;
   background-color: rgba(0, 0, 0, 0.9);
   position: relative; /* fixed volt*/
@@ -299,7 +296,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 }
 
 .line {
-  width: 100%;
   height: 0.2rem;
   background-color: #eee;
   transition: transform 0.3s;
@@ -360,7 +356,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 /* navbar4  */
 .section4 {
-  width: 100%;
   height: 20vh;
   background-color: #6edae6; /*ez volt var(--primary-color)  */
   display: flex;
@@ -381,13 +376,13 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 }
 .navbar4 {
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   right: 10%;
 }
 .navbar-link4 {
-  font-size: 1rem;
+  font-size: 1.8rem;
   display: inline-block;
-  margin: 0 3rem;
+  margin: 0 1.5rem;
   color: var(--black-color);
   transition: transform 0.5s;
 }
@@ -395,7 +390,25 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 .navbar-link4:hover {
   transform: scale(1.5);
 }
+@media (max-width: 768px) {
+  .navbar-link {
+    margin: 0 0.8rem;
+  }
 
+  .nav-link {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+
+    margin: 0.4rem 0;
+  }
+  .nav-link1 {
+    margin-top: 4rem;
+  }
+  .navbar-link4 {
+    font-size: 0.8rem;
+    margin: 0 1rem;
+  }
+}
 /* navbar4 end */
 
 /* navbar5*/

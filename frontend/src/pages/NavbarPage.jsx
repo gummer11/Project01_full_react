@@ -77,7 +77,7 @@ const NavbarPage = () => {
               </a>
             </div>
             <div className="nav-list3">
-              <a href="#" className="nav-link">
+              <a href="#" className="nav-link nav-link1">
                 Home
               </a>
               <a href="#" className="nav-link">
