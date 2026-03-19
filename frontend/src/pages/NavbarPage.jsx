@@ -28,10 +28,10 @@ const NavbarPage = () => {
               <i className="fas fa-pizza-slice"></i>
               <span>Pizza</span>
             </a>
-            <a href="#" className="navbar-link">
+            {/* <a href="#" className="navbar-link">
               <i className="fas fa-blender-phone"></i>
               <span>Contact</span>
-            </a>
+            </a>*/}
           </nav>
           <div
             className={`menu target  ${mutasd ? "" : "change"}`}

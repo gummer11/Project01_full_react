@@ -202,7 +202,7 @@ const IcodePage = () => {
                   <path d="M8 11v-4a4 4 0 1 1 8 0v4" />
                 </svg>
                 <input
-                  id="inputs3"
+                  id="inputs31"
                   type="text"
                   className="text1"
                   placeholder="********"
@@ -227,18 +227,24 @@ const IcodePage = () => {
               </svg>
             </div>
             <div className="buttons">
-              <label className="switch">
-                <input id="inputs3" type="checkbox" />
-                <span className="slider round"></span>
-              </label>
+              <div>
+                <label className="switch">
+                  <input id="inputs3" type="checkbox" />
+                  <span className="slider round"></span>
+                </label>
+              </div>
+              <div>
+                <p className="stay">Stay signed in</p>
+              </div>
 
-              <p className="stay">Stay signed in</p>
-              <input
-                id="inputs3"
-                className="button"
-                type="button"
-                value="Continue"
-              />
+              <div>
+                <input
+                  id="inputs3"
+                  className="buttonIP"
+                  type="button"
+                  value="Continue"
+                />
+              </div>
             </div>
             <p className="res_pass">Reset password</p>
           </div>
