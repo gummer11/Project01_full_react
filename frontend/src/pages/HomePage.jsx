@@ -44,6 +44,18 @@ const HomePage = () => {
             </Link>
           </div>
           <div>
+            <h2 className="color-title homepageh2" id="blue">
+              Webshop
+            </h2>
+            <Link to="/ws">
+              <img
+                src="../images/webshop.jpg" //"./assets/images/it11.jpg"
+                alt="blue"
+                className="imghp"
+              />
+            </Link>
+          </div>
+          <div>
             <h2 className="color-title homepageh2" id="orange">
               Js
             </h2>

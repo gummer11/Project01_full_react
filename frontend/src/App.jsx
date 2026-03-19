@@ -13,6 +13,7 @@ import FooterPage from "./pages/FooterPage";
 import HmenuPage from "./pages/HmenuPage";
 import DropdmPage from "./pages/DropdmPage";
 import SliderPage from "./pages/SliderPage";
+import WebshopPage from "./pages/WebshopPage";
 import NoteDetailPage from "./pages/NotesREACT/NoteDetailPage";
 import { Link } from "react-router";
 import toast from "react-hot-toast";
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/hp" element={<HmenuPage />} />
         <Route path="/dp" element={<DropdmPage />} />
         <Route path="/sp" element={<SliderPage />} />
+        <Route path="/ws" element={<WebshopPage />} />
       </Routes>
     </div>
   );

@@ -479,6 +479,19 @@
 .slider.round:before {
   border-radius: 50%;
 }
+@media (max-width: 480px) {
+  /* Ha itt mégis szeretnéd látni a gombokat, töröld a display: none-t */
+  .footer {
+    visibility: hidden;
+  }
+  .f1 {
+    height: 0px;
+  }
+  #h4s2 {
+    padding: 5px;
+    font-size: small;
+  }
+}
 /* s3 vége */
 /* s4  */
 
