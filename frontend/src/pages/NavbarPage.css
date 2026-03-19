@@ -8,7 +8,6 @@ https://icodethis.com/modes/design-to-code/477/submissions */
   font-size: xx-large;
 }
 .section0 {
-  height: 5vh;
 }
 
 /* Common styles font-size: 62.5%; */
@@ -250,7 +249,7 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 }
 
 .navbar3.change {
-  height: 60vh; /* 100 vh volt*/
+  height: 350px; /* 100 vh volt*/
 }
 
 @keyframes animateNavbar {
@@ -356,7 +355,7 @@ https://icodethis.com/modes/design-to-code/477/submissions */
 
 /* navbar4  */
 .section4 {
-  height: 20vh;
+  height: 200px;
   background-color: #6edae6; /*ez volt var(--primary-color)  */
   display: flex;
   align-items: center;

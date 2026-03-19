@@ -6,7 +6,7 @@
 
 /* s1  */
 .s1 {
-  height: 200px;
+  height: 100%px;
   width: 100%;
   font-family: "Poppins";
   display: flex;
@@ -191,7 +191,7 @@
 /* s1 vége */
 /* s2  */
 .s2 {
-  height: 200px;
+  height: 100%px;
   width: 100%;
   font-family: "Poppins";
   display: flex;
@@ -331,6 +331,7 @@
   max-width: 700px;
   width: 100%;
   min-height: 60vh;
+  padding: 20px;
 }
 .window {
   background-color: #ffffff;
@@ -491,6 +492,9 @@
     padding: 5px;
     font-size: small;
   }
+}
+@media (max-height: 760px) {
+  /* Ha itt mégis szeretnéd látni a gombokat, töröld a display: none-t */
 }
 /* s3 vége */
 /* s4  */
