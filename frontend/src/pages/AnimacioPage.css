@@ -201,8 +201,9 @@
 .button4 {
   background: #0c002b;
   width: 300px;
-  min-height: 220px;
+  min-height: 250px;
   position: relative;
+  padding: 10px;
 }
 .b4 .snake {
   color: #1670f0;

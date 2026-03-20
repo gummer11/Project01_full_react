@@ -16,14 +16,13 @@ connectDB();
 app.use(
   cors({
     //origin: "http://localhost:5173", //dev
-    origin:
-      process.env.NODE_ENV === "development"
-        ? "http://localhost:5173/api"
-        : "https://viliweb.hu",
-    //az alábbi a vercel production
-    //origin: "https://viliweb.hu", // A Vercel-es URL-ed
-    //methods: ["GET", "POST", "PUT", "DELETE"],
-    //credentials: true,
+    origin: "https://viliweb.hu", //production
+
+    //process.env.NODE_ENV
+    //origin:
+    //process.env.NODE_ENV === "development"
+    // ? "http://localhost:5173/api"
+    //  : "https://viliweb.hu",
   })
 );
 app.use(express.json()); // this middleware will parse JSON bodies: req.body
