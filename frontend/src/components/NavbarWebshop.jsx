@@ -25,7 +25,7 @@ const NavbarWebshop = () => {
               className="text-gray-300 hover:text-emerald-400 transition duration-300
 					 ease-in-out"
             >
-              Home
+              Otthon (ide kattints)
             </Link>
             {/*{user ? */}(
             <Link
