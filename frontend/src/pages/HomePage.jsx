@@ -7,6 +7,7 @@ import NoteCard from "../components/NoteCard";
 import NotesNotFound from "../components/NotesNotFound";
 import { Link, useNavigate } from "react-router";
 import "./HomePage.css";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 //import axios from "axios";    comment <Link to="/fff"></Link>
 //render node.js https://www.youtube.com/watch?v=tNpoc86cHrQ
 const HomePage = () => {
@@ -122,6 +123,21 @@ const HomePage = () => {
             <Link to="/sp">
               <img src="../images/slider.png" alt="yellow" className="imghp" />
             </Link>
+          </div>
+          <div>
+            <ParallaxProvider>
+              <Parallax speed={-30} style={{ marginTop: "130px" }}>
+                <h2 className="color-title homepageh2" id="yellow">
+                  Parallax
+                </h2>
+
+                <div style={{ padding: "0px" }}>
+                  {/* Lassabban mozgó elem */}
+
+                  <img src="../images/it11.jpg" className="imghp" alt="Ikon" />
+                </div>
+              </Parallax>
+            </ParallaxProvider>
           </div>
         </div>
       </div>
