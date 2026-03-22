@@ -98,7 +98,7 @@ const HomePage = () => {
           </div>
           <div>
             <h2 className="color-title homepageh2" id="yellow">
-              Hamburger menu
+              Hamburger
             </h2>
             <Link to="/hp">
               <img
@@ -110,7 +110,7 @@ const HomePage = () => {
           </div>
           <div>
             <h2 className="color-title homepageh2" id="yellow">
-              Dropdown menu
+              Dropdown
             </h2>
             <Link to="/dp">
               <img src="../images/ddown.png" alt="yellow" className="imghp" />
@@ -128,7 +128,7 @@ const HomePage = () => {
             <ParallaxProvider>
               <Parallax speed={-30} style={{ marginTop: "130px" }}>
                 <h2 className="color-title homepageh2" id="yellow">
-                  Parallax
+                  Parallax (alap)
                 </h2>
 
                 <div style={{ padding: "0px" }}>
